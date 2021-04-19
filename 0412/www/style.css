@@ -1,0 +1,22 @@
+*{
+  font-family: 'Noto Sans JP';
+}
+h1 {
+font-size:30px;
+color:#043D78;
+}
+h2 {
+  font-size:26px;
+  color:#195731;
+  border-bottom:2px dotted #195731;
+  padding-bottom:10px;
+}
+p {
+  margin-bottom:20px;
+}
+span {
+  font-weight:bold;
+}
+span.blue {
+  color:#0000cc;
+}
