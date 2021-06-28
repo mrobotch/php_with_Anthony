@@ -40,32 +40,35 @@
   - 数字には不要 **関数として見なすため**
 
 ### Lesson4:Strings
-- strtolower(string)
-- strtoupper(string)
-- strlen(string)
-  - strlen('abc') --> 3
-    strlen('あいう') --> 6
-    strlen('abcあいう') --> 9
-- str_replace(pattern, replacement, string)
-- substr(string, starting_index, how_many)
-- echo function() function() function()
-  - バイト数ではなく文字数を取得したい場合には「mb_strlen」関数
+- strtolower(string)　 --> 全て小文字
+- strtoupper(string)　 --> 全て大文字
+- 改行<br>タグを入れるとき、**,**で区切ること
+- `strlen(テキスト)+strlen(テキスト)` で足し算
+- `strlen(テキスト)-strlen(テキスト)` で引き算
+- `strlen(テキスト)*strlen(テキスト)` で掛け算
+- `strlen(テキスト)/strlen(テキスト)` で割り算
 
 ```
 <?php
-$str1 = 'abcde';
-$str_len1 = strlen($str1);
-$str_mblen1 = mb_strlen($str1);
+$phrase = "mrobotch design";
+echo strtoupper($phrase),"<br>";
+echo strtolower($phrase),"<br>";
+echo strlen("hello")+strlen("world"),"<br>";
+echo strlen("mrobotch")-strlen("design"),"<br>";
+echo strlen("mrobotch")*strlen("design"),"<br>";
+echo strlen("mrobotch")/strlen("design"),"<br>";
+?>
+```
 
-$str2 = '10時20分';
-$str_len2 = strlen($str2);
-$str_mblen2 = mb_strlen($str2);
+- str_replace(pattern, replacement, string)
+- substr(string, starting_index, how_many)
+- echo function(), function(), function() --> カンマ必要
 
-echo($str1.' の文字列の長さは'.$str_len1.'です<br>');
-echo($str1.' の文字数は'.$str_mblen1.'です<br><br>');
-
-echo($str2.' の文字列の長さは'.$str_len2.'です<br>');
-echo($str2.' の文字数は'.$str_mblen2.'です<br><br>');
+```
+<?php
+ $string = "Hello my name is Mikiko<br>";
+ echo $string;
+ echo str_replace("Mikiko","Anthony",$string);
 ?>
 ```
 
