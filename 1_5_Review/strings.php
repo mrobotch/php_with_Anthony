@@ -22,8 +22,9 @@
   $string = "Hello my name is Mikiko<br>";
   echo $string;
   echo str_replace("Mikiko","Anthony",$string);
-
  ?>
+
+
 
 
   </body>

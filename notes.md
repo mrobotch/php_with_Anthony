@@ -42,11 +42,13 @@
 ### Lesson4:Strings
 - strtolower(string)　 --> 全て小文字
 - strtoupper(string)　 --> 全て大文字
-- 改行<br>タグを入れるとき、**,**で区切ること
+- 改行<br>タグを入れるとき、 `** , **` で区切ること
 - `strlen(テキスト)+strlen(テキスト)` で足し算
 - `strlen(テキスト)-strlen(テキスト)` で引き算
 - `strlen(テキスト)*strlen(テキスト)` で掛け算
 - `strlen(テキスト)/strlen(テキスト)` で割り算
+- `** , **` で区切ると定義をいくつも追加していくことができる
+  - 例えば、選択範囲から文字数オーバーする場合`** ... **` を追加すると、お知らせなどで制限文字数内で表示ができる
 
 ```
 <?php
@@ -60,13 +62,14 @@ echo strlen("mrobotch")/strlen("design"),"<br>";
 ?>
 ```
 
-- str_replace(pattern, replacement, string)
+- str_replace(pattern, replacement, string) -->差し替え、3つの定義が必要
+  - (元の文言,差し替え文言,ファンクション)
 - substr(string, starting_index, how_many)
-- echo function(), function(), function() --> カンマ必要
+- echo function(), function(), function() --> 区切るにはカンマ必要
 
 ```
 <?php
- $string = "Hello my name is Mikiko<br>";
+ $string = "Hello my name is Mikiko";
  echo $string;
  echo str_replace("Mikiko","Anthony",$string);
 ?>
