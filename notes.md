@@ -27,9 +27,7 @@
 - echo文字列を複数表記する時は **;セミコロン**
 
 
-## Week2
-
-### Lesson3:Variables
+## Lesson3:Variables
 
 - ${varname} = {value};
 - `<?php ?>` で囲んだ中に項目を記述する。
@@ -39,7 +37,7 @@
   - キャラクターには **引用符 ""** が必要
   - 数字には不要 **関数として見なすため**
 
-### Lesson4:Strings
+## Lesson4:Strings
 - strtolower(string)　 --> 全て小文字
 - strtoupper(string)　 --> 全て大文字
 - 改行<br>タグを入れるとき、 `** , **` で区切ること
@@ -64,8 +62,6 @@ echo strlen("mrobotch")/strlen("design"),"<br>";
 
 - str_replace(pattern, replacement, string) -->差し替え、3つの定義が必要
   - (元の文言,差し替え文言,ファンクション)
-- substr(string, starting_index, how_many)
-- echo function(), function(), function() --> 区切るにはカンマ必要
 
 ```
 <?php
@@ -73,6 +69,33 @@ echo strlen("mrobotch")/strlen("design"),"<br>";
  echo $string;
  echo str_replace("Mikiko","Anthony",$string);
 ?>
+```
+
+- substr(string, starting_index, how_many) --> 入力文字列、開始場所、個数
+  - 個数が負（マイナス）の場合、終了場所からマイナスしたまで
+- echo function(), function(), function() --> 区切るにはカンマ必要
+
+```
+<?php
+$phrase = "mrobotch design";
+echo substr($phrase,5,-1),"<br>";
+ ?>
+```
+
+## Lesson5:Data_Types
+
+- `$num`数字の文字列
+  - `$num++`でプラス1
+  - `$num--`でマイナス1
+
+```
+<?php
+echo $num = 10, "<br>";
+$num++;
+echo $num, "<br>";
+$num--;
+echo $num;
+ ?>
 ```
 
 
