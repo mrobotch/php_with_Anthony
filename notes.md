@@ -98,6 +98,64 @@ echo $num;
  ?>
 ```
 
+## Lesson6:Numbers
+
+- `+` 足し算
+- `-` 引き算
+- `/` 割り算
+- `*` 掛け算
+- `%`　割り算で近似値を取る
+- `pow` power - 二乗
+- `sqrt` square route - ルート
+- `max` 大きい
+- `min` 小さい
+- `abs` absolute - 絶対値
+- `round` 四捨五入
+- `ceil` 切り上げ
+- `floor` 切り捨て
+
+
+
+```
++
+<?php  echo 12 + 5; ?>
+<br>
+-
+<?php  echo 12 - 5; ?>
+<br>
+/
+<?php  echo 12 / 5; ?>
+<br>
+%
+<?php  echo 12 % 5; ?>
+<br>
+pow()
+<?php  echo pow(12, 5); ?>
+<br>
+sqrt()
+<?php  echo sqrt(12); ?>
+<br>
+max()
+<?php  echo max(12, 5); ?>
+<br>
+min()
+<?php  echo min(12, 5); ?>
+<br>
+abs()
+<?php  echo abs(-12); ?>
+<br>
+round()
+<?php  echo round(12.1), " ", round(12.6); ?>
+<br>
+ceil()
+<?php  echo ceil(12.1); ?>
+<br>
+floor()
+<?php  echo floor(12.9); ?>
+
+```
+
+
 
 ### git push
 
