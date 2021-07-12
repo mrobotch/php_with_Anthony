@@ -1,18 +1,16 @@
 # php with Anthony
 
-## Week1
+## Lesson1
 
-### Lesson1
-
-#### サーバーの立ち上げ方
+### サーバーの立ち上げ方
 
 `cd path/to/your/project`
 `php -S localhost:8000`
 **ルートを作りたい場所にhostを立ち上げる**
 
-### Lesson2
+## Lesson2
 
-#### php記述の仕方
+### php記述の仕方
 
 - `<?php {php code goes here} ?>`
 - `php echo() is like print()`
@@ -155,6 +153,24 @@ floor()
 
 ```
 
+## Lesson7:Input_Users
+
+- Submit 書き方
+  - `<form></form>` で記載
+  - `<input type=""` typeは使用用途によって自由に
+    - 例えば `<input type="radio">``<input type="checkbox">` など
+    - `<input type="radio">` は`<label>` と一緒に使う
+  - `<?php echo $_GET[]　?>`で呼び出す
+  - `<input type="submit">` で提出
+
+```
+<form action="user_input.php" method="get">
+  Name: <input type="text" name="name">
+  <br>
+  Age: <input type="number" name="age">
+  <input type="submit">
+</form>
+```
 
 
 ### git push
