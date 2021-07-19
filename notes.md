@@ -153,7 +153,7 @@ floor()
 
 ```
 
-## Lesson7:Input_Users
+## Lesson7:Input_Users01
 
 - Submit 書き方
   - `<form></form>` で記載
@@ -172,6 +172,47 @@ floor()
 </form>
 ```
 
+## Lesson7:Input_Users02
+
+- htmlベースのみで書くことも可能
+```
+<form action="user_input_buttontest.php" method="get">
+  <p>Choose your monster's features:</p>
+   <div>
+     <input type="checkbox" id="scales" name="scales"
+            checked>
+     <label for="scales">Scales</label>
+   </div>
+
+   <div>
+     <input type="checkbox" id="horns" name="horns">
+     <label for="horns">Horns</label>
+   </div>
+ </form>
+
+ <p>希望する連絡方法を選択してください。</p>
+ <form>
+ <div>
+   <input type="radio" id="contactChoice1"
+    name="contact" value="email">
+   <label for="contactChoice1">電子メール</label>
+
+   <input type="radio" id="contactChoice2"
+    name="contact" value="phone">
+   <label for="contactChoice2">電話</label>
+
+   <input type="radio" id="contactChoice3"
+    name="contact" value="mail">
+   <label for="contactChoice3">郵便</label>
+ </div>
+ <div>
+   <button type="submit">送信</button>
+ </div>
+</form>
+
+ ```
+- phpで呼び出す場合は
+`<?php echo $_GET ["name"]?>`のように記述する
 
 ### git push
 
