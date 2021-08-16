@@ -214,6 +214,12 @@ floor()
 - phpで呼び出す場合は
 `<?php echo $_GET ["name"]?>`のように記述する
 
+## Lesson7:Input_Users03
+- phpで呼び出す場合は
+`<?php echo $_GET ["name"]?>`のように記述する
+-> GET,POST　は大文字
+
+
 ### git push
 
 - git hub にアップロードする時

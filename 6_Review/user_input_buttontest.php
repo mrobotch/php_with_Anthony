@@ -6,7 +6,7 @@
   </head>
   <body>
 
-  <form action="user_input_buttontest.php" method="get">
+  <form action="user_input_buttontest.php" method="getI e">
     <p>Choose your monster's features:</p>
      <div>
        <input type="checkbox" id="scales" name="scales"

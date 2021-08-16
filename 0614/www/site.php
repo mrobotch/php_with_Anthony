@@ -6,11 +6,10 @@
     <title>array</title>
   </head>
   <body>
-    <form action = “index.php” method = “GET”>
-    <input type = “text” name =“comment/“><br/>
-    <input type = “submit” value =“送信/“>
+    <form action = "site.php" method = "GET">
+    <input type = “text” name ="comment">
+    <input type = "submit" value="submit">
     </form>
-<?php echo "$_GET" ?>
 
   </body>
 </html>
