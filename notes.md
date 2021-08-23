@@ -220,6 +220,17 @@ floor()
 -> GET,POST　は大文字
 
 
+## Lesson8:checkbox
+- checkboxを複数作成した場合、
+ ```
+<?php
+  $fruits = $_POST["fruits"];
+  echo $fruits[1];
+ ?>
+ ```
+`$_POST[]`チェックを入れた順[]の中では0,1,2,3の順で表示する
+
+
 ### git push
 
 - git hub にアップロードする時
