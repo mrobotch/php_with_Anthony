@@ -231,6 +231,12 @@ floor()
 `$_POST[]`チェックを入れた順[]の中では0,1,2,3の順で表示する
 
 
+## Lesson9:Associative Array
+- Array で指定した順番でechoで呼び出す
+- Key Value を記載していればそちらを読み込む
+
+
+
 ### git push
 
 - git hub にアップロードする時
