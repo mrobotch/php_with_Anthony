@@ -234,7 +234,7 @@ floor()
 ## Lesson9:Associative Array
 - Array で指定した順番でechoで呼び出す
 - Key Value を記載していればそちらを読み込む
-
+- Array で記述した内容を`echo` で足し・引きで表示もできる。←未
 
 
 ### git push

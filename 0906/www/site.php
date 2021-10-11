@@ -14,7 +14,8 @@
 <?php
 /* $grades["Mikiko"] = "F";
 $grades["Jodi"] = "B-"; */
-$grades = array("Anthony"=>"A+","Jodi"=>"B-","Mikiko"=>"C+");
+/*$grades = array("Anthony"=>"F","Jodi"=>"B-","Mikiko"=>"A+","Nelson"=>"C"); */
+$grades = array("Anthony"=>"F","Jodi"=>"B-","Mikiko"=>"A+","Nelson"=>"C");
 echo $grades[$_POST["student"]];
 
 
